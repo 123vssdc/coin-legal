@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Coin — Privacy Policy</title>
+<style>
+  :root {
+    --bg: #f4f3ef;
+    --surface: #ffffff;
+    --ink: #191c20;
+    --ink-2: #5d636b;
+    --ink-3: #979da6;
+    --line: #e7e5df;
+    --accent: #0e7a5f;
+    --accent-soft: #e3efe9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #15171a;
+      --surface: #1d2024;
+      --ink: #f2f1ec;
+      --ink-2: #a7adb4;
+      --ink-3: #6f757c;
+      --line: #2c3036;
+      --accent: #4fbf98;
+      --accent-soft: #1c2b26;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #15171a;
+    --surface: #1d2024;
+    --ink: #f2f1ec;
+    --ink-2: #a7adb4;
+    --ink-3: #6f757c;
+    --line: #2c3036;
+    --accent: #4fbf98;
+    --accent-soft: #1c2b26;
+  }
+
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap {
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 56px 24px 96px;
+  }
+  .mark {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 28px;
+  }
+  .kicker {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+  h1 {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.15;
+    margin: 0 0 10px;
+    text-wrap: balance;
+  }
+  .updated {
+    color: var(--ink-3);
+    font-size: 14px;
+    margin: 0 0 40px;
+  }
+  .lede {
+    font-size: 19px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin: 0 0 44px;
+    padding: 20px 22px;
+    background: var(--accent-soft);
+    border-radius: 14px;
+    border: 1px solid var(--line);
+  }
+  .lede b { color: var(--accent); }
+  section { margin: 0 0 36px; }
+  h2 {
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--ink-2);
+    margin: 0 0 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+  p, li {
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--ink-2);
+    max-width: 62ch;
+  }
+  p { margin: 0 0 12px; }
+  strong { color: var(--ink); font-weight: 600; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 8px; }
+  li::marker { color: var(--accent); }
+  a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+  footer {
+    margin-top: 56px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line);
+    font-size: 13px;
+    color: var(--ink-3);
+  }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <svg class="mark" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <circle cx="32" cy="32" r="31" fill="var(--accent)"/>
+    <rect x="20" y="20" width="6.5" height="24" rx="3.25" fill="var(--bg)"/>
+    <rect x="28.75" y="14" width="6.5" height="36" rx="3.25" fill="var(--bg)"/>
+    <rect x="37.5" y="20" width="6.5" height="24" rx="3.25" fill="var(--bg)"/>
+  </svg>
+
+  <p class="kicker">Coin · Personal Money OS</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated August 12, 2026</p>
+
+  <p class="lede">Coin is built on one rule: <b>your financial data belongs to you, and we don't want it.</b> This page explains exactly what that means.</p>
+
+  <section>
+    <h2>What we collect</h2>
+    <p><strong>Nothing.</strong> Coin has no server. Every account, transaction, goal, and setting you enter is stored only on your device. Nothing is transmitted to us or to anyone else — there are no analytics SDKs, no advertising identifiers, no tracking of any kind.</p>
+  </section>
+
+  <section>
+    <h2>Where your data lives</h2>
+    <p>In the app's private storage on your device, protected by your device's own encryption and passcode. Deleting the app deletes the data with it. Inside the app, you can erase everything yourself (<strong>You → Erase everything</strong>) or export a complete copy any time (<strong>You → Export JSON</strong>).</p>
+  </section>
+
+  <section>
+    <h2>What we don't do</h2>
+    <ul>
+      <li>Collect personal or financial information</li>
+      <li>Run third-party analytics or advertising</li>
+      <li>Sell or share your data — we never receive it in the first place</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Future features</h2>
+    <p>If we ever add optional cloud sync or bank connections, they will be strictly opt-in, this policy will be updated first, and the app will keep working fully without them.</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Questions about this policy: <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a></p>
+  </section>
+
+  <footer>Coin — Personal Money OS</footer>
+</div>
+</body>
+</html>
