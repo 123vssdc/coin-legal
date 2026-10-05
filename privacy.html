@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="en">
+<html lang="uk">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Coin — Privacy Policy</title>
+<title>Coin — Політика конфіденційності · Privacy Policy</title>
 <style>
   :root {
     --bg: #f4f3ef;
@@ -130,6 +130,9 @@
   @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; transition: none !important; }
   }
+  .langs { display: flex; gap: 8px; margin: 0 0 28px; }
+  .langs a { font-size: 14px; font-weight: 600; text-decoration: none; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); }
+  .lang + .lang { margin-top: 72px; padding-top: 40px; border-top: 1px solid var(--line); }
 </style>
 </head>
 <body>
@@ -140,41 +143,178 @@
     <rect x="28.75" y="14" width="6.5" height="36" rx="3.25" fill="var(--bg)"/>
     <rect x="37.5" y="20" width="6.5" height="24" rx="3.25" fill="var(--bg)"/>
   </svg>
+  <nav class="langs" aria-label="Мова / Language"><a href="#uk">Українська</a><a href="#en">English</a></nav>
 
+  <article class="lang" id="uk" lang="uk">
   <p class="kicker">Coin · Personal Money OS</p>
-  <h1>Privacy Policy</h1>
-  <p class="updated">Last updated August 12, 2026</p>
+  <h1>Політика конфіденційності</h1>
+  <p class="updated">Оновлено 5 жовтня 2026 року</p>
 
-  <p class="lede">Coin is built on one rule: <b>your financial data belongs to you, and we don't want it.</b> This page explains exactly what that means.</p>
+  <p class="lede">Coin побудований на одному правилі: <b>ваші фінансові дані належать вам, і нам вони не потрібні.</b> Нижче — що саме це означає для кожної функції застосунку.</p>
 
   <section>
-    <h2>What we collect</h2>
-    <p><strong>Nothing.</strong> Coin has no server. Every account, transaction, goal, and setting you enter is stored only on your device. Nothing is transmitted to us or to anyone else — there are no analytics SDKs, no advertising identifiers, no tracking of any kind.</p>
+    <h2>Хто ми</h2>
+    <p>Coin розробляє Вадим Магерко (Vadym Maherko), Україна. З будь-яких питань щодо цієї політики пишіть на <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a>.</p>
   </section>
 
   <section>
-    <h2>Where your data lives</h2>
-    <p>In the app's private storage on your device, protected by your device's own encryption and passcode. Deleting the app deletes the data with it. Inside the app, you can erase everything yourself (<strong>You → Erase everything</strong>) or export a complete copy any time (<strong>You → Export JSON</strong>).</p>
+    <h2>Що ми збираємо</h2>
+    <p><strong>Нічого.</strong> У Coin немає сервера, облікового запису чи входу. Ми не отримуємо ваших даних: у застосунку немає аналітики, реклами, трекерів і рекламних ідентифікаторів.</p>
+  </section>
+
+  <section>
+    <h2>Що зберігається на вашому пристрої</h2>
+    <ul>
+      <li>Рахунки, транзакції, цілі, ліміти, регулярні платежі й налаштування.</li>
+      <li>Профіль: ім'я, необов'язкова адреса пошти й аватар. Вони потрібні лише для показу в застосунку й нікуди не надсилаються.</li>
+      <li>Короткий підсумок для віджетів, Dynamic Island і Siri («Безпечно витратити», частка на сьогодні, найближчий платіж). Він лежить у спільному сховищі Coin на цьому ж пристрої. Коли увімкнено блокування застосунку чи режим «Приховати суми», віджети не показують сум.</li>
+      <li>До п'яти автоматичних резервних копій у папці Documents застосунку.</li>
+    </ul>
+    <p>Усе це захищено шифруванням вашого пристрою. Видалення застосунку видаляє ці дані.</p>
+  </section>
+
+  <section>
+    <h2>Дозволи й навіщо вони</h2>
+    <ul>
+      <li><strong>Камера</strong> — лише щоб сфотографувати чек. Текст розпізнається на пристрої вбудованим інструментом Apple (Vision). Coin не зберігає фото й нікуди його не надсилає. Фото з галереї ви обираєте самі в системному вікні; доступу до всієї фототеки Coin не має.</li>
+      <li><strong>Мікрофон і розпізнавання мовлення</strong> — для голосового введення витрат. Розпізнавання виконує служба Apple; залежно від пристрою аудіо може оброблятися на серверах Apple відповідно до <a href="https://www.apple.com/legal/privacy/">політики конфіденційності Apple</a>. Coin не зберігає аудіо.</li>
+      <li><strong>Face ID, Touch ID або код-пароль</strong> — для блокування застосунку. Перевірку виконує iOS; Coin не отримує біометричних даних.</li>
+      <li><strong>Сповіщення</strong> — лише локальне щоденне нагадування, якщо ви його ввімкнете.</li>
+      <li><strong>Siri й «Команди»</strong> — ваші запити обробляє Apple; Coin відповідає даними з цього пристрою.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Мережа</h2>
+    <p>Єдиний мережевий запит Coin — необов'язкове щоденне оновлення офіційних курсів валют з відкритого API Національного банку України (bank.gov.ua). Воно вимкнене за замовчуванням і вмикається у «Ви → Курси валют». Запит не містить ваших даних; як і будь-який сайт, НБУ може бачити IP-адресу вашого пристрою.</p>
+  </section>
+
+  <section>
+    <h2>Резервні копії та обмін</h2>
+    <p>Якщо у вас увімкнено резервне копіювання iCloud або на комп'ютер, iOS додає дані Coin до резервної копії пристрою. Нею керуєте ви та Apple.</p>
+    <p>Coin нічого не передає, доки ви самі не натиснете «Поділитися» (картка історії чи цілі) або «Експортувати JSON». Тоді файл потрапляє лише туди, куди ви його надсилаєте.</p>
+  </section>
+
+  <section>
+    <h2>Чого ми не робимо</h2>
+    <ul>
+      <li>Не продаємо й не передаємо ваші дані — ми їх не отримуємо.</li>
+      <li>Не використовуємо дані для реклами чи профілювання.</li>
+      <li>Не маємо доступу до ваших банківських рахунків і не здійснюємо платежів. Coin — інструмент обліку, а не фінансова установа.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Ваші права</h2>
+    <p>Ваші дані повністю під вашим контролем: ви можете переглянути й змінити їх у застосунку, експортувати («Ви → Експортувати JSON») або видалити («Ви → Стерти все» чи видаливши застосунок). Оскільки ми не отримуємо ваших даних, на нашому боці видаляти нічого. Якщо ви напишете нам листа, листування зберігатиметься в нашій пошті — ви можете попросити його видалити. Ці права відповідають Закону України «Про захист персональних даних» і Загальному регламенту ЄС про захист даних (GDPR).</p>
+  </section>
+
+  <section>
+    <h2>Діти</h2>
+    <p>Coin не збирає даних ні від кого, зокрема від дітей.</p>
+  </section>
+
+  <section>
+    <h2>Не фінансова порада</h2>
+    <p>Розрахунки Coin — «Безпечно витратити», прогнози, «Чи можу я дозволити…?», відповіді «Спитати Coin» — це обчислення на основі даних, які ви ввели. Вони не є фінансовою, податковою чи інвестиційною порадою.</p>
+  </section>
+
+  <section>
+    <h2>Зміни</h2>
+    <p>Якщо ми додамо щось, що передає дані з пристрою (наприклад, синхронізацію чи підключення банку), ця сторінка буде оновлена заздалегідь, функція буде лише за вашою згодою, а застосунок і далі повністю працюватиме без неї.</p>
+  </section>
+
+  <section>
+    <h2>Контакти</h2>
+    <p><a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a></p>
+  </section>
+  </article>
+
+
+  <article class="lang" id="en" lang="en">
+  <p class="kicker">Coin · Personal Money OS</p>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated October 5, 2026</p>
+
+  <p class="lede">Coin is built on one rule: <b>your financial data belongs to you, and we don't want it.</b> Here is exactly what that means for each part of the app.</p>
+
+  <section>
+    <h2>Who we are</h2>
+    <p>Coin is developed by Vadym Maherko, Ukraine. For any question about this policy, write to <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a>.</p>
+  </section>
+
+  <section>
+    <h2>What we collect</h2>
+    <p><strong>Nothing.</strong> Coin has no server, no account and no sign-in. We never receive your data: there are no analytics, ads, trackers or advertising identifiers in the app.</p>
+  </section>
+
+  <section>
+    <h2>What stays on your device</h2>
+    <ul>
+      <li>Accounts, transactions, goals, limits, recurring payments and settings.</li>
+      <li>Your profile: name, an optional e-mail address and an avatar — used only to show them in the app, never sent anywhere.</li>
+      <li>A short summary for widgets, the Dynamic Island and Siri (Safe to Spend, today's share, the next bill), kept in Coin's shared storage on this same device. With the app lock or "Hide amounts" on, widgets show no amounts.</li>
+      <li>Up to five automatic backups in the app's Documents folder.</li>
+    </ul>
+    <p>All of it is protected by your device's encryption. Deleting the app deletes it.</p>
+  </section>
+
+  <section>
+    <h2>Permissions and why</h2>
+    <ul>
+      <li><strong>Camera</strong> — only to photograph a receipt. Its text is read on the device by Apple's built-in Vision framework. Coin does not keep the photo or send it anywhere. Photos from your library are picked by you in the system picker; Coin has no access to your whole library.</li>
+      <li><strong>Microphone and speech recognition</strong> — for adding expenses by voice. Recognition is performed by Apple; depending on your device, audio may be processed on Apple's servers under <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>. Coin does not keep the audio.</li>
+      <li><strong>Face ID, Touch ID or passcode</strong> — to lock the app. iOS does the check; Coin never receives biometric data.</li>
+      <li><strong>Notifications</strong> — only a local daily reminder, if you turn it on.</li>
+      <li><strong>Siri and Shortcuts</strong> — your requests are handled by Apple; Coin answers from data on this device.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Network</h2>
+    <p>Coin's only network request is an optional daily update of official exchange rates from the National Bank of Ukraine's public API (bank.gov.ua). It is off by default and turned on in You → Exchange rates. The request contains none of your data; like any website, the NBU can see your device's IP address.</p>
+  </section>
+
+  <section>
+    <h2>Backups and sharing</h2>
+    <p>If iCloud or computer backups are on, iOS includes Coin's data in your device backup, which is managed by you and Apple.</p>
+    <p>Coin shares nothing until you tap Share (a story or goal card) or Export JSON yourself — then the file goes only where you send it.</p>
   </section>
 
   <section>
     <h2>What we don't do</h2>
     <ul>
-      <li>Collect personal or financial information</li>
-      <li>Run third-party analytics or advertising</li>
-      <li>Sell or share your data — we never receive it in the first place</li>
+      <li>Sell or share your data — we never receive it.</li>
+      <li>Use data for advertising or profiling.</li>
+      <li>Access your bank accounts or make payments. Coin is a budgeting tool, not a financial institution.</li>
     </ul>
   </section>
 
   <section>
-    <h2>Future features</h2>
-    <p>If we ever add optional cloud sync or bank connections, they will be strictly opt-in, this policy will be updated first, and the app will keep working fully without them.</p>
+    <h2>Your rights</h2>
+    <p>Your data is fully under your control: view and edit it in the app, export it (You → Export JSON) or delete it (You → Erase everything, or delete the app). Since we never receive your data, there is nothing to delete on our side. If you e-mail us, the correspondence stays in our mailbox — you can ask us to delete it. These rights follow the Law of Ukraine "On Personal Data Protection" and the EU General Data Protection Regulation (GDPR).</p>
+  </section>
+
+  <section>
+    <h2>Children</h2>
+    <p>Coin collects no data from anyone, including children.</p>
+  </section>
+
+  <section>
+    <h2>Not financial advice</h2>
+    <p>Coin's figures — Safe to Spend, forecasts, "Can I afford it?", Ask Coin answers — are calculations from the data you entered. They are not financial, tax or investment advice.</p>
+  </section>
+
+  <section>
+    <h2>Changes</h2>
+    <p>If we ever add something that sends data off your device (such as sync or a bank connection), this page will be updated first, the feature will be strictly opt-in, and the app will keep working fully without it.</p>
   </section>
 
   <section>
     <h2>Contact</h2>
-    <p>Questions about this policy: <a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a></p>
+    <p><a href="mailto:vvvadim.businesss@gmail.com">vvvadim.businesss@gmail.com</a></p>
   </section>
+  </article>
 
   <footer>Coin — Personal Money OS</footer>
 </div>
